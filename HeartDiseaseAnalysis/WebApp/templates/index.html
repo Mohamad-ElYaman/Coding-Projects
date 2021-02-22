@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>Will I Develop Heart Disease?</title>
+   </head>
+   <body>
+      <h1>Will I Develop Heart Disease in 10 Years?</h1>
+      <p>Fill in these fields: </p>
+      <form action = "predict" method = "POST" 
+         enctype = "multipart/form-data">
+         Gender:
+         <br>
+         Male: <input type = "radio" name = "gender" value="1" id="gender1"/>
+         Female: <input type = "radio" name = "gender" value="0" id="gender2" />
+         <br>
+         Age: <input type = "text" name = "age"  size=5 required/>
+         <br>
+         Cigarettes Per Day (Enter 0 if Non-Smoker):
+         <br>
+         <input type = "text" name = "num_smoke" size=3 required placeholder="0"/>
+         <br>
+         Prevelant Stroke: 
+         <br>
+         Yes: <input type = "radio" value = "1" name = "stroke" />
+         No: <input type = "radio" value = "0" name = "stroke" checked/>
+         <br>
+         Systolic Blood Pressure (mmHg):
+         <input type = "text" name = "sysBP" required size=3/>
+         <br>
+         Glucose (mg/dL):
+         <input type = "text" name = "gluc" required size=3/>
+         <br>
+         <input type = "submit"/>
+      </form>   
+   </body>
+</html>
